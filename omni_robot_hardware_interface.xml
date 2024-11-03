@@ -1,0 +1,8 @@
+<library path="omni_robot_hardware">
+  <class type="omni_robot_hardware::OmniRobotHardwareInterface"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hardware interface for an omnidirectional robot with 4 wheels and 2 controllers (Arduino and ESP32).
+    </description>
+  </class>
+</library>

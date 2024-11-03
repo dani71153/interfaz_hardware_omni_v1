@@ -1,0 +1,27 @@
+hardware_parameters:
+  arduino_port: "/dev/ttyACM0"
+  esp_port: "/dev/ttyUSB0"
+  baud_rate: "115200"
+
+  # Tópicos y nodos
+  node_name: "omni_robot_hardware_node"
+  velocity_topic: "/cmd_vel"
+  state_topic: "/wheel_states"
+
+  # Frecuencia de publicación (en Hz)
+  publish_frequency: 50
+
+  # Timeout de comunicación serial en milisegundos
+  serial_timeout: 100
+
+  # Límites de velocidad en revoluciones por segundo (RPS) para cada rueda
+  wheel_limits:
+    min_rps: -5.0
+    max_rps: 5.0
+
+  # Factores de ajuste para cada encoder, en función de los pulsos por vuelta
+  encoder_adjustments:
+    wheel_0: 1.0   # Factor de ajuste para la rueda 0
+    wheel_1: 1.0   # Factor de ajuste para la rueda 1
+    wheel_2: 1.0   # Factor de ajuste para la rueda 2
+    wheel_3: 1.0   # Factor de ajuste para la rueda 3
